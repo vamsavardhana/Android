@@ -1,0 +1,2 @@
+The corresponding files are found in app/src/main folder. The java files and the layout.xml files are found here.
+Once the submit button is clicked on the next page the low scores, high scores and average scores are printed out for the user.

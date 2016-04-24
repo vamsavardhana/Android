@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:weightSum="99">
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_weight="33"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="100">
+<fragment
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="50"
+    android:name="com.example.anna.assignment3partb.Primaryfragment"
+    android:id="@+id/fragment1"
+    tools:layout="@layout/fragment1"
+    android:layout_gravity="left"/>
+        <fragment
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:name="com.example.anna.assignment3partb.Secondfragment"
+            android:layout_weight="50"
+            android:id="@+id/fragment2"
+            tools:layout="@layout/fragment2"
+            android:layout_gravity="right"/>
+
+        </LinearLayout></ScrollView>
+    <LinearLayout
+        android:layout_weight="33"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="20"
+        android:src="@drawable/download"/>
+    <Button
+        android:id="@+id/btn1"
+        android:layout_weight="80"
+        android:text="set as wallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" /></LinearLayout>
+    <SurfaceView
+        android:layout_weight="33"
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="enter ur mail id"
+    android:id="@+id/tv1"
+    android:gravity="left"
+    android:layout_weight="0.7"/>
+<EditText
+    android:layout_weight="0.3"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:hint="add to mailing list"
+    android:id="@+id/et1"
+    android:gravity="right"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add to mailing list"/>
+</LinearLayout></ScrollView>
+</LinearLayout>
