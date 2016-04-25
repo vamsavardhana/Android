@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    tools:context=".SecondActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+        android:weightSum="100">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="purchase price "
+        android:id="@+id/tv1"
+        android:layout_weight="35"
+        android:gravity="left"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/purchaseprice"
+        android:inputType="number"
+        android:layout_weight="20"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="$"
+            android:layout_weight="45"
+            android:id="@+id/tv1_1" />
+
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Downpayment"
+            android:layout_weight="15"
+            android:id="@+id/tv2" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/downpayment"
+            android:layout_weight="85"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="% ($60,000)"
+            android:layout_weight="10"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv2_1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mortgage term"
+            android:layout_weight="10"
+            android:id="@+id/tv3" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_weight="85"
+            android:id="@+id/mortgageterm"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="years"
+            android:layout_weight="10"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv3_1"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interest rate"
+            android:layout_weight="15"
+            android:id="@+id/tv4" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:id="@+id/interestrate"
+            android:layout_weight="80"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text=" %"
+            android:layout_weight="10"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv4_1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Property tax"
+            android:layout_weight="20"
+            android:id="@+id/tv5" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/propertytax"
+            android:layout_weight="75"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text=" $ per year"
+            android:layout_weight="10"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv5_1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Property insurance"
+            android:layout_weight="5"
+            android:id="@+id/tv6" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/propertyinsurance"
+            android:layout_weight="90"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text=" $ per year"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv6_1"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PMI"
+            android:layout_weight="30"
+            android:id="@+id/tv7" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.52%"
+            android:gravity="center"
+            android:id="@+id/pmi"
+            android:layout_weight="70"
+            />
+
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:weightSum="100">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="zip code"
+                android:id="@+id/tv8"
+                android:layout_weight="25"
+                android:gravity="left"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/zipcode"
+                android:inputType="number"
+                android:layout_weight="65"/>
+
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:weightSum="100">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First payment date"
+            android:id="@+id/tv9"
+            />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_weight="50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_weight="50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="calculate mortgage"
+        android:id="@+id/calculate1"
+        android:layout_weight="0.08" />
+
+</LinearLayout>
+    </LinearLayout>
