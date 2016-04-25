@@ -1,0 +1,1 @@
+The one button app sends an sms to my number. In the Main Activity, the number to which the sms is sent can be changed in the onclick function at line 62. It is a single activity application. The message appears for the person whose phone number is entered in the input.
